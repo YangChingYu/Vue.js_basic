@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+ 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<body>
+  <div id= "app"> 
+    <h2> 顏色列表</h2>
+    <ul>
+      <li v-for="color in colors">
+        {{color}}
+      </li>
+
+      <h2> 各家庭的父親</h2>
+    <ul>
+      <li v-for="home in homes" v-on:click="myFa(home,father)">
+        {{home.father}}
+      </li>
+ 
+  </div>
+  
+  
+ 
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="vue.js"></script>
+
+</body>
+</html>
